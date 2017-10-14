@@ -1,0 +1,415 @@
+HTML {
+	MARGIN: 0px; FONT-FAMILY: "Trebuchet MS", tahoma, Arial; COLOR: #19405d; FONT-SIZE: 12px
+}
+BODY {
+	MARGIN: 0px; FONT-FAMILY: "Trebuchet MS", tahoma, Arial; COLOR: #19405d; FONT-SIZE: 12px
+}
+TD {
+	MARGIN: 0px
+}
+BODY {
+	BACKGROUND-COLOR: #154b87; MARGIN: 0px auto; VERTICAL-ALIGN: top
+}
+.rightimg {
+	TEXT-ALIGN: right; BACKGROUND: url(../img/nightingale.png) no-repeat left top; HEIGHT: 127px; FONT-SIZE: 20px; FONT-WEIGHT: bold
+}
+.heaerielogo {
+	TEXT-ALIGN: right; BACKGROUND: url(../img/heaerie_header_right.png) no-repeat left top; HEIGHT: 100%; FONT-SIZE: 100%; FONT-WEIGHT: bold
+}
+.header {
+	TEXT-ALIGN: right; BACKGROUND: url(../img/logo.gif) no-repeat left top; HEIGHT: 127px; FONT-SIZE: 20px; FONT-WEIGHT: bold
+}
+.heaerieheader {
+	TEXT-ALIGN: right; BACKGROUND: url(../img/logo.png) no-repeat left top; HEIGHT: 127px; FONT-SIZE: 20px; FONT-WEIGHT: bold
+}
+#wrapper {
+	MARGIN: 20px auto; WIDTH: 880px; BACKGROUND: #fff
+}
+.container {
+	PADDING-BOTTOM: 10px; MARGIN-TOP: 0px; PADDING-LEFT: 1px; PADDING-RIGHT: 1px; PADDING-TOP: 0px
+}
+.clear {
+	LINE-HEIGHT: 0px; HEIGHT: 0px; CLEAR: both; FONT-SIZE: 0px
+}
+.applicationhead {
+	TEXT-ALIGN: center; BORDER-LEFT: #fff 1px solid; LINE-HEIGHT: 30px; BACKGROUND-COLOR: #457aac; MARGIN-BOTTOM: 20px; HEIGHT: 25px; COLOR: #fff; FONT-SIZE: 15px; FONT-WEIGHT: bold; BORDER-RIGHT: #fff 1px solid
+}
+.apphead {
+	TEXT-ALIGN: center; BORDER-LEFT: #fff 1px solid; LINE-HEIGHT: 30px; BACKGROUND-COLOR: #457aac; MARGIN-BOTTOM: 20px; HEIGHT: 25px; COLOR: #fff; FONT-SIZE: 15px; FONT-WEIGHT: bold; BORDER-RIGHT: #fff 1px solid
+}
+
+.headnotes {
+	TEXT-ALIGN: left; LINE-HEIGHT: 20px; COLOR: #000; FONT-SIZE: 11px
+}
+.headnotes A {
+	COLOR: #0a6d7a; FONT-SIZE: 11px; FONT-WEIGHT: bold
+}
+.headnotes1 {
+	TEXT-ALIGN: left; LINE-HEIGHT: 20px; FONT-FAMILY: Tahoma, Arial; COLOR: #19405d; FONT-SIZE: 12px
+}
+.headnotes1 A {
+	COLOR: #0a6d7a; FONT-SIZE: 14px
+}
+.mandatory {
+	PADDING-LEFT: 3px; FONT-FAMILY: Verdana; COLOR: #fc1618; FONT-SIZE: 11px; FONT-WEIGHT: bolder
+}
+.nomandatory {
+	PADDING-LEFT: 6px; WIDTH: 8px; FONT-FAMILY: Verdana; COLOR: #fc1618; FONT-SIZE: 11px; FONT-WEIGHT: bolder
+}
+.contenttable {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.tabContainer {
+	MARGIN: 10px 0px; WIDTH: 100%
+}
+.tabContainer .digiTabs {
+	POSITION: relative; PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; DISPLAY: block; OVERFLOW: hidden; TOP: 1px; LIST-STYLE-IMAGE: none; PADDING-TOP: 0px
+}
+.tabContainer .digiTabs LI {
+	BORDER-BOTTOM: medium none; BACKGROUND-COLOR: #46aaf7; WIDTH: 212px; FONT-FAMILY: verdana; FLOAT: left; HEIGHT: 42px; COLOR: #fff; FONT-SIZE: 0.8em; CURSOR: pointer; FONT-WEIGHT: bold; MARGIN-RIGHT: 4px
+}
+.tabContainer .digiTabs LI.personal {
+	BORDER-BOTTOM: medium none; WIDTH: 212px; FONT-FAMILY: verdana; BACKGROUND: url(../../../images/onlineAppForm/personal_selected.gif) no-repeat left top; FLOAT: left; HEIGHT: 42px; COLOR: #fff; FONT-SIZE: 0.8em; CURSOR: pointer; FONT-WEIGHT: bold; MARGIN-RIGHT: 6px
+}
+.tabContainer .digiTabs LI.qualification {
+	BORDER-BOTTOM: medium none; WIDTH: 212px; FONT-FAMILY: verdana; BACKGROUND: url(../../../images/onlineAppForm/qualificationdetails.gif) no-repeat left top; FLOAT: left; HEIGHT: 42px; COLOR: #fff; FONT-SIZE: 0.8em; CURSOR: pointer; FONT-WEIGHT: bold; MARGIN-RIGHT: 6px
+}
+.tabContainer .digiTabs LI.course {
+	BORDER-BOTTOM: medium none; WIDTH: 212px; FONT-FAMILY: verdana; BACKGROUND: url(../../../images/onlineAppForm/choosecourse.gif) no-repeat left top; FLOAT: left; HEIGHT: 42px; COLOR: #fff; FONT-SIZE: 0.8em; CURSOR: pointer; FONT-WEIGHT: bold; MARGIN-RIGHT: 6px
+}
+.tabContainer .digiTabs LI.payment {
+	BORDER-BOTTOM: medium none; WIDTH: 212px; FONT-FAMILY: verdana; BACKGROUND: url(../../../images/onlineAppForm/proceedpayment.gif) no-repeat left top; FLOAT: left; HEIGHT: 42px; COLOR: #fff; FONT-SIZE: 0.8em; CURSOR: pointer; FONT-WEIGHT: bold; MARGIN-RIGHT: 0px
+}
+.tabContainer .digiTabs LI.selected {
+	BACKGROUND-COLOR: #fff; WIDTH: 212px; HEIGHT: 42px; COLOR: #393939
+}
+#tabContent {
+	BORDER-BOTTOM: #aac0cb 1px solid; BORDER-LEFT: #aac0cb 1px solid; PADDING-BOTTOM: 10px; PADDING-LEFT: 27px; PADDING-RIGHT: 25px; MARGIN-BOTTOM: 10px; BACKGROUND: url(../../../images/onlineAppForm/tabcontainerbttmbg.gif) #fff repeat-x left bottom; OVERFLOW: hidden; BORDER-TOP: #aac0cb 1px solid; BORDER-RIGHT: #aac0cb 1px solid; PADDING-TOP: 25px
+}
+#tab1Content {
+	BORDER-BOTTOM: #aac0cb 1px solid; BORDER-LEFT: #aac0cb 1px solid; PADDING-BOTTOM: 10px; MIN-HEIGHT: 900px; PADDING-LEFT: 27px; PADDING-RIGHT: 47px; MARGIN-BOTTOM: 10px; BACKGROUND: url(../../../images/onlineAppForm/tabcontainerbttmbg.gif) #fff repeat-x left bottom; OVERFLOW: hidden; BORDER-TOP: #aac0cb 1px solid; BORDER-RIGHT: #aac0cb 1px solid; PADDING-TOP: 25px
+}
+.sectionheading {
+	BORDER-BOTTOM: #b8cedb 1px solid; LINE-HEIGHT: 26px; FONT-FAMILY: "Trebuchet MS", Arial, Helvetica, sans-serif; HEIGHT: 26px; COLOR: #183f5c; FONT-SIZE: 16px; FONT-WEIGHT: bold
+}
+.sectionheading1 {
+	LINE-HEIGHT: 26px; FONT-FAMILY: "Trebuchet MS", Arial, Helvetica, sans-serif; HEIGHT: 26px; COLOR: #183f5c; FONT-SIZE: 14px
+}
+HR {
+	BORDER-BOTTOM: #b8cedb 0px solid; BORDER-LEFT: #b8cedb 0px solid; OUTLINE-STYLE: none; OUTLINE-COLOR: invert; OUTLINE-WIDTH: 0px; BACKGROUND: #b8cedb; HEIGHT: 1px; BORDER-TOP: #b8cedb 0px solid; BORDER-RIGHT: #b8cedb 0px solid
+}
+.text_field {
+	BORDER-BOTTOM: #b1c1cd 1px solid; BORDER-LEFT: #b1c1cd 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-FAMILY: Tahoma, Arial; BACKGROUND: #fff; HEIGHT: 18px; FONT-SIZE: 12px; BORDER-TOP: #b1c1cd 1px solid; BORDER-RIGHT: #b1c1cd 1px solid; PADDING-TOP: 2px
+}
+.Country_field {
+	BORDER-BOTTOM: #b1c1ce 1px solid; BORDER-LEFT: #b1c1ce 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 3px; WIDTH: 180px; PADDING-RIGHT: 3px; FONT-FAMILY: Tahoma, Arial; FONT-SIZE: 12px; BORDER-TOP: #b1c1ce 1px solid; BORDER-RIGHT: #b1c1ce 1px solid; PADDING-TOP: 2px
+}
+.largedropdown_field {
+	BORDER-BOTTOM: #b1c1ce 1px solid; BORDER-LEFT: #b1c1ce 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 3px; WIDTH: 180px; PADDING-RIGHT: 3px; FONT-FAMILY: Tahoma, Arial; FONT-SIZE: 12px; BORDER-TOP: #b1c1ce 1px solid; BORDER-RIGHT: #b1c1ce 1px solid; PADDING-TOP: 2px
+}
+.information {
+	LINE-HEIGHT: 18px; DISPLAY: block; COLOR: #767676; FONT-SIZE: 11px
+}
+.selectbox2 {
+	BORDER-BOTTOM: #b1c1cd 1px solid; BORDER-LEFT: #b1c1cd 1px solid; PADDING-BOTTOM: 3px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-FAMILY: Tahoma, Arial; FONT-SIZE: 12px; BORDER-TOP: #b1c1cd 1px solid; BORDER-RIGHT: #b1c1cd 1px solid; PADDING-TOP: 3px
+}
+.butonhldr {
+	MARGIN-TOP: 10px
+}
+A.quick_submit {
+	LINE-HEIGHT: 22px; MARGIN-TOP: 0px; PADDING-RIGHT: 15px; DISPLAY: block; BACKGROUND: url(../../../images/onlineAppForm/submit_rght_img.gif) no-repeat right 50%; FLOAT: left; HEIGHT: 22px; COLOR: #000; FONT-SIZE: 11px; MARGIN-RIGHT: 0px; TEXT-DECORATION: none
+}
+A.quick_submit SPAN {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 22px; PADDING-LEFT: 15px; PADDING-RIGHT: 0px; DISPLAY: block; BACKGROUND: url(../../../images/onlineAppForm/submit_left_img.gif) no-repeat left top; COLOR: #000; FONT-SIZE: 11px; PADDING-TOP: 0px
+}
+A.quick_submit:hover SPAN {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 22px; PADDING-LEFT: 15px; PADDING-RIGHT: 0px; DISPLAY: block; BACKGROUND: url(../../../images/onlineAppForm/submit_left_img.gif) no-repeat left top; COLOR: #000; FONT-SIZE: 11px; TEXT-DECORATION: none; PADDING-TOP: 0px
+}
+.hide {
+	DISPLAY: none
+}
+.notes {
+	COLOR: #fc1618; FONT-SIZE: 11px
+}
+.tablelist {
+	BORDER-BOTTOM: #b9cad4 1px solid; BORDER-LEFT: #b9cad4 1px solid; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-COLLAPSE: collapse; BORDER-TOP: #b9cad4 1px solid; BORDER-RIGHT: #b9cad4 1px solid; PADDING-TOP: 0px
+}
+.tablelist TH {
+	BORDER-BOTTOM: #b8cad4 1px solid; TEXT-ALIGN: left; BORDER-LEFT: #b8cad4 1px solid; LINE-HEIGHT: 10px; TEXT-INDENT: 15px; PADDING-RIGHT: 5px; BACKGROUND: url(../../../images/onlineAppForm/thbg.gif) repeat-x left top; HEIGHT: 10px; COLOR: #18415d; FONT-SIZE: 13px; BORDER-TOP: #b8cad4 1px solid; FONT-WEIGHT: bold; BORDER-RIGHT: #b8cad4 1px solid
+}
+.tablelist TD {
+	BORDER-BOTTOM: #b8cedb 0px solid; TEXT-ALIGN: left; BORDER-LEFT: #b8cedb 0px solid; PADDING-BOTTOM: 12px; PADDING-LEFT: 11px; PADDING-RIGHT: 11px; COLOR: #18415d; FONT-SIZE: 13px; BORDER-TOP: #b8cedb 0px solid; BORDER-RIGHT: #b8cedb 0px solid; PADDING-TOP: 12px
+}
+.tablelist TD.tdheader {
+	BORDER-BOTTOM: #b8cedb 1px solid; TEXT-ALIGN: left; BORDER-LEFT: #b8cedb 1px solid; PADDING-BOTTOM: 0px; LINE-HEIGHT: 31px; PADDING-LEFT: 14px; PADDING-RIGHT: 5px; COLOR: #18415d; FONT-SIZE: 13px; BORDER-TOP: #b8cedb 1px solid; FONT-WEIGHT: bold; BORDER-RIGHT: #b8cedb 1px solid; PADDING-TOP: 0px
+}
+.tablelist TD TABLE {
+	BORDER-BOTTOM: #b9cad4 0px solid; TEXT-ALIGN: left; BORDER-LEFT: #b9cad4 0px solid; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #18415d; FONT-SIZE: 13px; BORDER-TOP: #b9cad4 0px solid; BORDER-RIGHT: #b9cad4 0px solid; PADDING-TOP: 0px
+}
+.tablelist TD TABLE TD {
+	BORDER-BOTTOM: #b9cad4 0px solid; TEXT-ALIGN: left; BORDER-LEFT: #b9cad4 0px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #18415d; FONT-SIZE: 13px; BORDER-TOP: #b9cad4 0px solid; BORDER-RIGHT: #b9cad4 0px solid; PADDING-TOP: 2px
+}
+.tablelist TD.number {
+	TEXT-ALIGN: center; COLOR: #18415d; FONT-SIZE: 15px; FONT-WEIGHT: bold
+}
+.text1 {
+	FONT-FAMILY: Tahoma, Arial; COLOR: #000000; FONT-SIZE: 12px
+}
+.text2 {
+	LINE-HEIGHT: 25px; FONT-FAMILY: Tahoma, Arial; COLOR: #000000; FONT-SIZE: 13px
+}
+.blue {
+	BACKGROUND: #f7fbfe
+}
+IMG {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; OUTLINE-STYLE: none; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+.hinttext {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 18px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #2c2c2a; FONT-SIZE: 11px; PADDING-TOP: 0px
+}
+.hinttext A {
+	COLOR: #0683c7; TEXT-DECORATION: none
+}
+.hinttext A:hover {
+	COLOR: #0683c7; TEXT-DECORATION: underline
+}
+.text3 {
+	LINE-HEIGHT: 22px; FONT-FAMILY: Tahoma, Arial; FONT-SIZE: 12px
+}
+.notetext {
+	PADDING-LEFT: 15px; BACKGROUND: #e9f2f7; HEIGHT: 42px
+}
+.radio {
+	VERTICAL-ALIGN: middle
+}
+.sucessstatus {
+	PADDING-LEFT: 50px; PADDING-RIGHT: 20px; FONT-FAMILY: "Myriad Pro", Tahoma, Arial, sans-serif; BACKGROUND: url(../../../images/onlineAppForm/sucesstick.gif) #e7fde7 no-repeat 15px 15px; HEIGHT: 58px; COLOR: #000000; FONT-SIZE: 18px
+}
+.statusmsg {
+	FONT-FAMILY: "Myriad Pro", Tahoma, Arial, sans-serif; COLOR: #000000; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+.statustable {
+	MARGIN-TOP: 50px
+}
+.footer {
+	MARGIN: auto; PADDING-LEFT: 140px; FONT-FAMILY: "Myriad Pro", Tahoma, Arial, sans-serif; BACKGROUND: url(../../../images/onlineAppForm/footer_MRIU.gif) #adc8d6 no-repeat 40px 16px; HEIGHT: 70px; COLOR: #000000; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+.failuremsg {
+	PADDING-LEFT: 65px; PADDING-RIGHT: 20px; FONT-FAMILY: "Myriad Pro", Tahoma, Arial, sans-serif; BACKGROUND: url(../../../images/onlineAppForm/ico_error.gif) #ffe9cf no-repeat 15px 5px; HEIGHT: 58px; COLOR: #000000; FONT-SIZE: 22px
+}
+.header_Print {
+	PADDING-BOTTOM: 21px; PADDING-LEFT: 65px; PADDING-RIGHT: 54px; BACKGROUND: url(../../../images/onlineAppForm/headerbg_print.gif) repeat-x left top; HEIGHT: 109px; FONT-SIZE: 20px; FONT-WEIGHT: bold; PADDING-TOP: 22px
+}
+.Univ_heading {
+	TEXT-ALIGN: right; COLOR: #000; FONT-SIZE: 18px; FONT-WEIGHT: bold
+}
+.App_heading {
+	TEXT-ALIGN: right; COLOR: #19300c; FONT-SIZE: 22px; FONT-WEIGHT: bold
+}
+.info_header {
+	BORDER-BOTTOM: #41677a 1px solid; LINE-HEIGHT: 17px; MARGIN: 10px 0px; PADDING-LEFT: 22px; HEIGHT: 17px; FONT-SIZE: 10pt; FONT-WEIGHT: bold
+}
+.info_subheader {
+	BORDER-BOTTOM: #41677a 1px dashed; LINE-HEIGHT: 25px; MARGIN: 10px 0px 10px 22px; HEIGHT: 25px; COLOR: #000; FONT-SIZE: 10pt; FONT-WEIGHT: bold
+}
+.declaration {
+	LINE-HEIGHT: 38px; MARGIN: 10px 0px; PADDING-LEFT: 22px; HEIGHT: 38px; FONT-SIZE: 13pt; FONT-WEIGHT: bold
+}
+.info_table {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-FAMILY: "Tahoma", Arial; PADDING-TOP: 0px
+}
+.info_table TD {
+	LINE-HEIGHT: 14px; PADDING-LEFT: 22px; FONT-SIZE: 11px
+}
+.info_table TD STRONG {
+	FONT-SIZE: 10px; FONT-WEIGHT: bold
+}
+.instruction_table {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-FAMILY: "Tahoma", Arial; PADDING-TOP: 0px
+}
+.instruction_table TD {
+	LINE-HEIGHT: 20px; PADDING-LEFT: 22px; FONT-SIZE: 12px
+}
+.instruction_table TD STRONG {
+	FONT-SIZE: 13px; FONT-WEIGHT: bold
+}
+.blue {
+	BACKGROUND-COLOR: #eaf4f9
+}
+.App_name {
+	FONT-SIZE: 13px; FONT-WEIGHT: bold
+}
+.photo_placehldr {
+	Z-INDEX: 1; BORDER-BOTTOM: #999999 1px dashed; POSITION: absolute; TEXT-ALIGN: center; BORDER-LEFT: #999999 1px dashed; PADDING-BOTTOM: 50px; BACKGROUND-COLOR: #ffffff; PADDING-LEFT: 0px; WIDTH: 150px; PADDING-RIGHT: 0px; HEIGHT: 45px; BORDER-TOP: #999999 1px dashed; TOP: 20px; BORDER-RIGHT: #999999 1px dashed; PADDING-TOP: 50px; LEFT: 710px
+}
+.photo_placehldr2 {
+	Z-INDEX: 1; POSITION: absolute; WIDTH: 107px; HEIGHT: 123px; TOP: 69px; LEFT: 640px
+}
+.statement {
+	LINE-HEIGHT: 20px; PADDING-LEFT: 22px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; COLOR: #000; FONT-SIZE: 11px
+}
+.footer_print {
+	TEXT-ALIGN: right; MARGIN: auto; PADDING-LEFT: 50px; PADDING-RIGHT: 50px; FONT-FAMILY: "Myriad Pro", Tahoma, Arial, sans-serif; BACKGROUND: url(../../../images/onlineAppForm/footer_logoimg.gif) #adc8d6 no-repeat 60px 16px; HEIGHT: 70px; COLOR: #000000; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+.footer_print TD {
+	PADDING-RIGHT: 50px; COLOR: #000000; FONT-SIZE: 14px
+}
+.sign_hldr {
+	MARGIN: 20px 0px 10px
+}
+.admittest {
+	TEXT-ALIGN: right; PADDING-RIGHT: 30px; COLOR: #fff; FONT-SIZE: 20px; FONT-WEIGHT: bold
+}
+.instruction {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 25px; PADDING-RIGHT: 25px; PADDING-TOP: 0px
+}
+.instruction LI {
+	LINE-HEIGHT: 30px
+}
+.spacer {
+	HEIGHT: 20px
+}
+.sign_panel {
+	BORDER-BOTTOM: #999 1px dashed; TEXT-ALIGN: center; BORDER-LEFT: #999 1px dashed; LINE-HEIGHT: 100px; MARGIN: 10px; HEIGHT: 100px; BORDER-TOP: #999 1px dashed; BORDER-RIGHT: #999 1px dashed
+}
+A.register_button {
+	LINE-HEIGHT: 22px; MARGIN-TOP: 0px; PADDING-RIGHT: 150px; DISPLAY: block; FONT-FAMILY: "Myriad Pro", Arial; BACKGROUND: url(../../../images/onlineAppForm/submit.gif) no-repeat right 50%; FLOAT: left; HEIGHT: 32px; COLOR: #000; FONT-SIZE: 14px; MARGIN-RIGHT: 0px; TEXT-DECORATION: none
+}
+A.register_button SPAN {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; PADDING-LEFT: 15px; PADDING-RIGHT: 0px; DISPLAY: block; BACKGROUND: url(../../../images/onlineAppForm/preview.gif) no-repeat left top; COLOR: #000; FONT-SIZE: 14px; PADDING-TOP: 0px
+}
+A.register_button:hover SPAN {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; PADDING-LEFT: 15px; PADDING-RIGHT: 0px; DISPLAY: block; BACKGROUND: url(../../../images/onlineAppForm/preview.gif) no-repeat left top; COLOR: #000; FONT-SIZE: 14px; TEXT-DECORATION: none; PADDING-TOP: 0px
+}
+A.register_button_upload {
+	LINE-HEIGHT: 22px; MARGIN-TOP: 0px; PADDING-RIGHT: 150px; DISPLAY: block; FONT-FAMILY: "Myriad Pro", Arial; BACKGROUND: url(../../../images/onlineAppForm/submit.gif) no-repeat right 50%; FLOAT: left; HEIGHT: 32px; COLOR: #000; FONT-SIZE: 14px; MARGIN-RIGHT: 0px; TEXT-DECORATION: none
+}
+A.register_button_upload SPAN {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; PADDING-LEFT: 15px; PADDING-RIGHT: 0px; DISPLAY: block; BACKGROUND: url(../../../images/onlineAppForm/submit.gif) no-repeat left top; COLOR: #000; FONT-SIZE: 14px; PADDING-TOP: 0px
+}
+A.register_button_upload:hover SPAN {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; PADDING-LEFT: 15px; PADDING-RIGHT: 0px; DISPLAY: block; BACKGROUND: url(../../../images/onlineAppForm/submit.gif) no-repeat left top; COLOR: #000; FONT-SIZE: 14px; TEXT-DECORATION: none; PADDING-TOP: 0px
+}
+.text_field_name {
+	BORDER-BOTTOM: #b1c1cd 1px solid; BORDER-LEFT: #b1c1cd 1px solid; PADDING-BOTTOM: 2px; TEXT-TRANSFORM: uppercase; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-FAMILY: Tahoma, Arial; HEIGHT: 18px; FONT-SIZE: 12px; BORDER-TOP: #b1c1cd 1px solid; BORDER-RIGHT: #b1c1cd 1px solid; PADDING-TOP: 2px
+}
+.app_no_field {
+	BORDER-BOTTOM: #b1c1cd 1px solid; BORDER-LEFT: #b1c1cd 1px solid; PADDING-BOTTOM: 2px; TEXT-TRANSFORM: uppercase; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-FAMILY: Tahoma, Arial; HEIGHT: 23px; FONT-SIZE: 25px; BORDER-TOP: #b1c1cd 1px solid; BORDER-RIGHT: #b1c1cd 1px solid; PADDING-TOP: 2px
+}
+.formmessage {
+	LINE-HEIGHT: 22px; PADDING-LEFT: 4px; COLOR: #999999; FONT-SIZE: 11px; FONT-WEIGHT: normal
+}
+.globalerrormessage {
+	BACKGROUND-IMAGE: url(../../../images/onlineAppForm/error.gif); BORDER-BOTTOM: #d00003 1px solid; POSITION: relative; BORDER-LEFT: #d00003 1px solid; PADDING-BOTTOM: 4px; LINE-HEIGHT: 28px; BACKGROUND-COLOR: #fbf4dc; MARGIN: 4px 10%; PADDING-LEFT: 35px; BACKGROUND-REPEAT: no-repeat; FONT-FAMILY: "Arial"; BACKGROUND-POSITION: 5px 5px; HEIGHT: 28px; COLOR: #d00003; FONT-SIZE: 12px; BORDER-TOP: #d00003 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #d00003 1px solid; PADDING-TOP: 4px
+}
+.globalsuccessmessage {
+	BACKGROUND-IMAGE: url(../../../images/onlineAppForm/sucesstick.gif); BORDER-BOTTOM: #000000 1px solid; POSITION: relative; BORDER-LEFT: #000000 1px solid; PADDING-BOTTOM: 4px; LINE-HEIGHT: 28px; BACKGROUND-COLOR: #e7fde7; MARGIN: 4px 10%; PADDING-LEFT: 35px; BACKGROUND-REPEAT: no-repeat; FONT-FAMILY: "Arial"; BACKGROUND-POSITION: 5px 5px; HEIGHT: 28px; COLOR: #000000; FONT-SIZE: 12px; BORDER-TOP: #000000 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #000000 1px solid; PADDING-TOP: 4px
+}
+.globalsuccessmsgwide {
+	BACKGROUND-IMAGE: url(../../../images/onlineAppForm/sucesstick.gif); BORDER-BOTTOM: #000000 1px solid; POSITION: relative; BORDER-LEFT: #000000 1px solid; PADDING-BOTTOM: 4px; LINE-HEIGHT: 10px; BACKGROUND-COLOR: #e7fde7; MARGIN: 4px 10%; PADDING-LEFT: 35px; BACKGROUND-REPEAT: no-repeat; FONT-FAMILY: "Arial"; BACKGROUND-POSITION: 5px 5px; HEIGHT: 80px; COLOR: #000000; FONT-SIZE: 12px; BORDER-TOP: #000000 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #000000 1px solid; PADDING-TOP: 4px
+}
+.messagecloseimg {
+	POSITION: absolute; TOP: 4px; RIGHT: 4px
+}
+A {
+	OUTLINE-STYLE: none; OUTLINE-COLOR: invert; OUTLINE-WIDTH: medium; COLOR: #0683c7; TEXT-DECORATION: none
+}
+A:hover {
+	OUTLINE-STYLE: none; OUTLINE-COLOR: invert; OUTLINE-WIDTH: medium; COLOR: #0683c7; TEXT-DECORATION: none
+}
+A:active {
+	OUTLINE-STYLE: none; OUTLINE-COLOR: invert; OUTLINE-WIDTH: medium
+}
+A:focus {
+	OUTLINE-STYLE: none; OUTLINE-COLOR: invert; OUTLINE-WIDTH: medium
+}
+INPUT:focus {
+	OUTLINE-STYLE: none; OUTLINE-COLOR: invert; OUTLINE-WIDTH: medium
+}
+* :focus {
+	OUTLINE-STYLE: none; OUTLINE-COLOR: invert; OUTLINE-WIDTH: 0px
+}
+:focus {
+	-moz-outline-style: none
+}
+.instruction_new {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 25px; PADDING-RIGHT: 25px; PADDING-TOP: 0px
+}
+.instruction_new LI {
+	LINE-HEIGHT: 25px
+}
+.instruction2 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 25px; PADDING-RIGHT: 25px; PADDING-TOP: 0px
+}
+.instruction2 LI {
+	LINE-HEIGHT: 25px
+}
+.black {
+	COLOR: #000
+}
+.form {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.note {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 18px; PADDING-LEFT: 3px; PADDING-RIGHT: 6px; COLOR: #ad2323; FONT-SIZE: 12px; FONT-WEIGHT: bolder; PADDING-TOP: 0px
+}
+.notepatch {
+	BORDER-BOTTOM: #e1dfba 1px solid; BORDER-LEFT: #e1dfba 1px solid; PADDING-BOTTOM: 12px; PADDING-LEFT: 12px; WIDTH: 520px; PADDING-RIGHT: 12px; BACKGROUND: #fbfbe2; HEIGHT: auto; BORDER-TOP: #e1dfba 1px solid; BORDER-RIGHT: #e1dfba 1px solid; PADDING-TOP: 12px
+}
+.notepatch2 {
+	BORDER-BOTTOM: #e1dfba 1px solid; BORDER-LEFT: #e1dfba 1px solid; PADDING-BOTTOM: 7px; PADDING-LEFT: 7px; PADDING-RIGHT: 7px; BACKGROUND: #fbfbe2; HEIGHT: auto; BORDER-TOP: #e1dfba 1px solid; BORDER-RIGHT: #e1dfba 1px solid; PADDING-TOP: 7px
+}
+.notepatch3 {
+	BORDER-BOTTOM: #e1dfba 1px solid; BORDER-LEFT: #e1dfba 1px solid; PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; WIDTH: 480px; PADDING-RIGHT: 10px; BACKGROUND: #fbfbe2; HEIGHT: auto; BORDER-TOP: #e1dfba 1px solid; BORDER-RIGHT: #e1dfba 1px solid; PADDING-TOP: 10px
+}
+.applicantname {
+	COLOR: #1a313f; FONT-SIZE: 13px; FONT-WEIGHT: bold
+}
+.uploadfield {
+	BORDER-BOTTOM: #7d7d7d 1px solid; BORDER-LEFT: #7d7d7d 1px solid; WIDTH: 370px; BORDER-TOP: #7d7d7d 1px solid; BORDER-RIGHT: #7d7d7d 1px solid
+}
+.uploadheading {
+	LINE-HEIGHT: 30px; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+.bluebgpatch {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 46px; PADDING-LEFT: 21px; PADDING-RIGHT: 21px; BACKGROUND: #e9f2f7; COLOR: #19405f; PADDING-TOP: 0px
+}
+.bluebgpatch A {
+	COLOR: #0683c7; TEXT-DECORATION: none
+}
+.bluebgpatch A:hover {
+	COLOR: #0683c7; TEXT-DECORATION: underline
+}
+.bluebgpatch TD {
+	FONT-SIZE: 12px
+}
+.bluebgpatch_payment {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 30px; PADDING-LEFT: 21px; PADDING-RIGHT: 21px; BACKGROUND: #e9f2f7; COLOR: #19405f; PADDING-TOP: 0px
+}
+.bluebgpatch_payment TD {
+	FONT-SIZE: 12px
+}
+.whitebgpatch {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 25px; PADDING-LEFT: 21px; PADDING-RIGHT: 21px; COLOR: #17405e; PADDING-TOP: 0px
+}
+.whitebgpatch TD {
+	FONT-SIZE: 12px
+}
+.enclosurepatch {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 25px; PADDING-LEFT: 21px; PADDING-RIGHT: 21px; COLOR: #17405e; PADDING-TOP: 0px
+}
+.enclosurepatch TD {
+	FONT-SIZE: 11px
+}
+.copyright {
+	TEXT-ALIGN: center; LINE-HEIGHT: 30px; HEIGHT: 40px
+}
+.blue {
+	BACKGROUND-COLOR: #eaf4f9
+}
+#instruction1 {
+	WIDTH: 400px
+}
+#instruction2 {
+	WIDTH: 400px
+}

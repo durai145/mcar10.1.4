@@ -1,0 +1,591 @@
+
+<!-- saved from url=(0040)http://localhost/mcar10.1.4/demo/cal.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="description" content="Free carnatic class">
+<meta name="keywords" content="music, baisc practices,Tamil Isai,Samanmandilam, Sarali, jandavarisai,thattu, vakkra, melakartha, heaerie,carnatic,ragam">
+<meta name="author" content="duraimurugan g">
+
+
+	<title>Heaerie-Carnatic</title>
+
+		<link rel="stylesheet" href="http://localhost/mcar10.1.4/css/main.1.css">
+		<link title="heaerie" href="./Heaerie-Carnatic_files/content.css" type="text/css" rel="STYLESHEET">
+		<link title="heaerie" href="./Heaerie-Carnatic_files/content-fonts.css" type="text/css" rel="STYLESHEET">
+		<link title="heaerie" href="./Heaerie-Carnatic_files/content-ie6.css" type="text/css" rel="STYLESHEET">
+		<link href="./Heaerie-Carnatic_files/pro.css" type="text/css" rel="stylesheet">
+		<link title="heaerie" href="./Heaerie-Carnatic_files/services.css" type="text/css" rel="STYLESHEET">
+	
+			<script language="javascript" src="./Heaerie-Carnatic_files/Resource.js"> </script>
+		<script>
+				var docSource="";
+		</script>  
+
+      
+		<script language="javascript" src="./Heaerie-Carnatic_files/field_02.js"> </script>
+		<script language="javascript" src="./Heaerie-Carnatic_files/field_03.js"> </script>
+		<script language="javascript" src="./Heaerie-Carnatic_files/dates.js"> </script>
+		<script language="javascript" src="./Heaerie-Carnatic_files/xml.js"> </script>
+		<script language="javascript" src="./Heaerie-Carnatic_files/validate.js"> </script>
+		<script language="javascript" src="./Heaerie-Carnatic_files/field_02(1).js"> </script>
+		<script language="javascript" src="./Heaerie-Carnatic_files/xml(1).js"> </script>
+
+		<script language="javascript" src="./Heaerie-Carnatic_files/cal_map.js"> </script>
+		<script language="javascript" src="./Heaerie-Carnatic_files/cal_cust.js"> </script>
+
+	<link rel="stylesheet" href="http://localhost/mcar10.1.4/javascript/themes/base/jquery.ui.all.css">
+	<script src="./Heaerie-Carnatic_files/jquery-1.7.2.js"></script>
+	<script src="./Heaerie-Carnatic_files/jquery.ui.core.js"></script>
+	<script src="./Heaerie-Carnatic_files/jquery.ui.widget.js"></script>
+	<script src="./Heaerie-Carnatic_files/jquery.ui.position.js"></script>
+	<script src="./Heaerie-Carnatic_files/jquery.ui.autocomplete.js"></script>
+	<script src="./Heaerie-Carnatic_files/jquery.ui.tabs.js"></script>
+
+	<link rel="stylesheet" href="http://localhost/mcar10.1.4/css/demos.css">
+
+
+
+	<script>
+	$(function() {
+		$( "#tabs" ).tabs();
+	});
+	</script>
+
+
+
+<script>
+
+   function onPostReqDecode64(url,json,id,type)
+	{
+		var rtVal="";
+             $.post( 
+             url,
+             json,
+             function(data) 
+		{
+		if(type == 'DIV')
+		$("#"+id).html(data);
+		else if( type == 'OBJ')
+		{
+		document.getElementById(id).value= decode64(data);
+		}
+
+		}
+          )
+
+	}
+/*--
+
+function cust_post_onChange(obj)
+{
+
+	nameid   =obj.getAttribute('name');
+	if (nameid == "")
+	{
+	;
+	}
+	else
+	{
+		alert("nameid<" + nameid + ">");
+		
+
+	if(nameid =="name_KeerId" )
+	{
+			var div= "theText";
+	//	var url= $("#url");
+		var url= "getKeethamIdValue.php";
+		var json= { DEBUG : 0, NAME: "KeerId", GROUP : "name" , ID : obj.value  , LANG : $("#lang").val()};
+
+		//alert("url =<" + url.val() +">" );
+
+//var  json = JSON.parse(jsonstr.val());
+		
+	//var json={seqname:"GROUPID"};
+		onPostReqDecode64(url,  json ,div,'OBJ');
+	}
+
+
+		
+	}
+
+
+}
+*/
+
+function cust_post_onClick(obj)
+{
+
+	nameid   =obj.getAttribute('nameid');
+	if (nameid == "")
+	{
+	;
+	}
+	else
+	{
+
+		if(obj.id == "save")
+		{
+		//	alert("save<" + obj.id + ">");
+
+			try
+		{
+		//alert("ON");
+		var div= "rslt";
+	//	var url= $("#url");
+		var url= "setKeethamValue.php";
+		var json= { DEBUG : 0, NAME: "KeerId", GROUP : "name", SAK:   encode64( $("#theText").val()), ID: $("#KeerId").val()  };
+
+
+		alert ( "SAK:" + $("#theText").val() + " ID " + $("#KeerId").val()  );
+
+		//alert("url =<" + url.val() +">" );
+
+//var  json = JSON.parse(jsonstr.val());
+		
+	//var json={seqname:"GROUPID"};
+		onPostReq(url,  json ,div,'DIV');
+
+		}
+		catch(e)
+		{
+			alert("Error:"+e);
+		}
+
+		}
+	}
+
+
+}
+
+		try
+		{
+		//alert("ON");
+		var div= "KeerthaiIdDiv";
+	//	var url= $("#url");
+		var url= "getKeethamIdCombo.php";
+		var json= { DEBUG : 0, NAME: "KeerId", GROUP : "name" };
+
+		//alert("url =<" + url.val() +">" );
+
+//var  json = JSON.parse(jsonstr.val());
+		
+	//var json={seqname:"GROUPID"};
+		onPostReqDecode64(url,  json ,div,'DIV');
+
+		}
+		catch(e)
+		{
+			alert("Error:"+e);
+		}
+
+
+		
+</script>
+
+
+</head>
+
+ 
+  <body class="cbody">
+
+     <form name="form1" method="POST">
+
+
+     
+
+
+
+		<script language="javascript" src="./Heaerie-Carnatic_files/Resource.js"> </script>
+		<script>
+				var docSource="";
+		</script>  
+
+
+ <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                 <tbody>
+                    <tr>
+                        <td class="sectionheading" colspan="10"> <center>Master Song Maintenance</center> </td>
+                        <script>
+                            try
+                            {
+                                                               
+                            }
+                            catch(e)
+                            {
+                                alert('PHP:call melRagaNameList '+e);
+                            }
+                            
+                            </script>
+                        
+                    </tr>
+                    <tr>
+                        <td>
+                        </td>
+                    </tr>
+
+
+</tbody></table> 
+
+<script>
+
+var fld=new fieldClass();
+
+
+
+	creatNewTbl();
+	fnCreateCaption("Keetham Master Maintenace");
+
+	fld.name="FuncCode"
+	fld.label="Function"
+	fld.desc="N"
+	fld.group="maint"
+	fld.mndf="Y";
+//	fld.dataType="NUMBER"
+	fld.dataType="LIST"
+	fld.dflt=""
+	fld.listVal="||A|A-ADD|M|M-MODIFY|I|I-INQUERY|V|V-VERIFY|C|C-CONFIRMED"
+//	fld.dataType="LABEL"
+	fld.parent="name"
+	fld.xml="N"
+	createRow();
+
+
+	fnCreateField(fld);
+
+
+//	createRow();
+	fld.name    ="SNo"
+	fld.label   ="S.No"
+	fld.desc    ="N"
+	fld.group   ="maint"
+	fld.mndf    ="N";
+	fld.dataType="VARCHAR"
+	fld.parent  ="name"
+	fld.xml     ="N"
+	fnCreateField(fld);
+
+
+	
+
+createRow();
+
+
+	fld.name="rlt"
+	fld.label="rlt"
+	fld.dataType="HIDDEN"
+	fld.parent="maint"
+	fld.mndf="N";
+	fld.xml="N"
+
+	fnCreateField(fld);
+	createRow();
+
+	fld.name    ="S"
+	fld.label   ="S"
+	fld.desc    ="N"
+	fld.group   ="maint"
+	fld.mndf    ="N";
+	fld.dataType="NUMBER"
+	fld.parent  ="name"
+	fld.xml     ="N"
+	fnCreateField(fld);
+
+	createRow();
+
+
+	fld.name    ="R1"
+	fld.label   ="R1"
+	fld.desc    ="N"
+	fld.group   ="maint"
+	fld.mndf    ="N";
+	fld.dataType="NUMBER"
+	fld.parent  ="name"
+	fld.xml     ="N"
+	fnCreateField(fld);
+
+
+	fld.name    ="R2"
+	fld.label   ="R2"
+	fld.desc    ="N"
+	fld.group   ="maint"
+	fld.mndf    ="N";
+	fld.dataType="NUMBER"
+	fld.parent  ="name"
+	fld.xml     ="N"
+	fnCreateField(fld);
+
+	fld.name    ="R3"
+	fld.label   ="R3"
+	fld.desc    ="N"
+	fld.group   ="maint"
+	fld.mndf    ="N";
+	fld.dataType="NUMBER"
+	fld.parent  ="name"
+	fld.xml     ="N"
+	fnCreateField(fld);
+
+
+
+	createRow();
+
+	fld.name    ="G1"
+	fld.label   ="G1"
+	fld.desc    ="N"
+	fld.group   ="maint"
+	fld.mndf    ="N";
+	fld.dataType="NUMBER"
+	fld.parent  ="name"
+	fld.xml     ="N"
+	fnCreateField(fld);
+
+
+	fld.name    ="G2"
+	fld.label   ="G2"
+	fld.desc    ="N"
+	fld.group   ="maint"
+	fld.mndf    ="N";
+	fld.dataType="NUMBER"
+	fld.parent  ="name"
+	fld.xml     ="N"
+	fnCreateField(fld);
+
+
+	fld.name    ="G3"
+	fld.label   ="G3"
+	fld.desc    ="N"
+	fld.group   ="maint"
+	fld.mndf    ="N";
+	fld.dataType="NUMBER"
+	fld.parent  ="name"
+	fld.xml     ="N"
+	fnCreateField(fld);
+
+	createRow();
+
+	fld.name    ="M1"
+	fld.label   ="M1"
+	fld.desc    ="N"
+	fld.group   ="maint"
+	fld.mndf    ="N";
+	fld.dataType="NUMBER"
+	fld.parent  ="name"
+	fld.xml     ="N"
+	fnCreateField(fld);
+
+
+	fld.name    ="M2"
+	fld.label   ="M2"
+	fld.desc    ="N"
+	fld.group   ="maint"
+	fld.mndf    ="N";
+	fld.dataType="NUMBER"
+	fld.parent  ="name"
+	fld.xml     ="N"
+	fnCreateField(fld);
+
+	createRow();
+
+
+	fld.name    ="P"
+	fld.label   ="P"
+	fld.desc    ="N"
+	fld.group   ="maint"
+	fld.mndf    ="N";
+	fld.dataType="NUMBER"
+	fld.parent  ="name"
+	fld.xml     ="N"
+	fnCreateField(fld);
+	createRow();
+
+
+	fld.name    ="D1"
+	fld.label   ="D1"
+	fld.desc    ="N"
+	fld.group   ="maint"
+	fld.mndf    ="N";
+	fld.dataType="NUMBER"
+	fld.parent  ="name"
+	fld.xml     ="N"
+	fnCreateField(fld);
+
+	fld.name    ="D2"
+	fld.label   ="D2"
+	fld.desc    ="N"
+	fld.group   ="maint"
+	fld.mndf    ="N";
+	fld.dataType="NUMBER"
+	fld.parent  ="name"
+	fld.xml     ="N"
+	fnCreateField(fld);
+
+	fld.name    ="D3"
+	fld.label   ="D3"
+	fld.desc    ="N"
+	fld.group   ="maint"
+	fld.mndf    ="N";
+	fld.dataType="NUMBER"
+	fld.parent  ="name"
+	fld.xml     ="N"
+	fnCreateField(fld);
+
+
+	createRow();
+
+
+	fld.name    ="N1"
+	fld.label   ="N1"
+	fld.desc    ="N"
+	fld.group   ="maint"
+	fld.mndf    ="N";
+	fld.dataType="NUMBER"
+	fld.parent  ="name"
+	fld.xml     ="N"
+	fnCreateField(fld);
+
+	fld.name    ="N2"
+	fld.label   ="N2"
+	fld.desc    ="N"
+	fld.group   ="maint"
+	fld.mndf    ="N";
+	fld.dataType="NUMBER"
+	fld.parent  ="name"
+	fld.xml     ="N"
+	fnCreateField(fld);
+
+
+	fld.name    ="N3"
+	fld.label   ="N3"
+	fld.desc    ="N"
+	fld.group   ="maint"
+	fld.mndf    ="N";
+	fld.dataType="NUMBER"
+	fld.parent  ="name"
+	fld.xml     ="N"
+	fnCreateField(fld);
+
+
+
+
+
+createRow();	
+
+	fnCreateCaption("Melakartha ");
+
+
+	createRow();	
+	fld.name ="AroRagaClass"
+	fld.label="Aro Raga Class"
+	fld.desc="N"
+	fld.group="maint"
+	fld.mndf="N";
+	fld.listVal="||1|1-Sampurana|2|2-Sadava|3|3-Ovdava"
+	fld.dataType="LIST"
+	fld.parent="name"
+	fld.xml="N"
+//	fld.dflt    =glAroRagaClass;
+	fnCreateField(fld);
+
+
+
+
+//	createRow();	
+	fld.name ="AvroRagaClass"
+	fld.label="Avro Raga Class"
+	fld.desc="N"
+	fld.group="maint"
+	fld.mndf="Y";
+	fld.dataType="LIST"
+	fld.listVal="||1|1-Sampurana|2|2-Sadava|3|3-Ovdava"
+	fld.parent="name"
+	fld.xml="N"
+//	fld.dflt    =glAvroRagaClass;
+	fnCreateField(fld);
+
+			createRow();	
+	fld.name ="SwaraAro"
+	fld.label=""
+	fld.desc="N"
+	fld.group="maint"
+	fld.mndf="N";
+	fld.dataType="DIVROW"
+	fld.parent="name"
+	fld.xml="N"
+//	fld.dflt    =glSwaraAro;
+	fnCreateField(fld);
+
+
+
+		fld.name ="SwaraAvro"
+	fld.label=""
+	fld.desc="N"
+	fld.group="maint"
+	fld.mndf="N";
+	fld.dataType="DIVROW"
+	fld.parent="name"
+	fld.xml="N"
+//	fld.dflt    =glSwaraAvro;
+	fnCreateField(fld);
+
+
+		createRow();	
+	fld.name ="SwaraAroComb"
+	fld.label=""
+	fld.desc="N"
+	fld.group="maint"
+	fld.mndf="N";
+	fld.dataType="DIVROW"
+	fld.parent="name"
+	fld.xml="N"
+//	fld.dflt    =glSwaraAro;
+	fnCreateField(fld);
+
+
+
+		fld.name ="SwaraAvroComb"
+	fld.label=""
+	fld.desc="N"
+	fld.group="maint"
+	fld.mndf="N";
+	fld.dataType="DIVROW"
+	fld.parent="name"
+	fld.xml="N"
+//	fld.dflt    =glSwaraAvro;
+	fnCreateField(fld);
+
+
+
+
+
+
+
+
+
+
+
+
+	
+</script><table border="0" class="ctable"> <tbody><tr><td class="ccaption" colspan="10">Keetham Master Maintenace</td></tr><tr class="ctable"></tr><tr><td><label class="clabel" for="maint_FuncCode">Function<span class="mandatory">*</span></label></td><td><select datatype="LIST" nameid="maint" name="maint_FuncCode" xmlname="FuncCode" id="maint_FuncCode" xml="N" parent="name" class="ctext" value="" mndf="Y" label=" Function " onchange="javascript:onChange(this);" onkeydown="javascript:onKeyDown(this);" onkeypress="javascript:onKeyPress(this);" onkeyup="javascript:onKeyUp(this);"><option selected="" value=""> </option><option value="A"> A-ADD</option><option value="M"> M-MODIFY</option><option value="I"> I-INQUERY</option><option value="V"> V-VERIFY</option><option value="C"> C-CONFIRMED</option></select></td><td><label class="clabel" for="maint_SNo">S.No</label></td><td><input type="text" class="ctext" name="maint_SNo" xmlname="SNo" nameid="maint" id="maint_SNo" mndf="N" desc="N" datatype="VARCHAR" xml="N" parent="name" value="" label="S.No" onchange="javascript:onChange(this);" onkeydown="javascript:onKeyDown(this);" onkeypress="javascript:onKeyPress(this);" onkeyup="javascript:onKeyUp(this);"></td></tr><tr class="ctable"></tr><input type="hidden" name="maint_rlt" nameid="maint" id="maint_rlt" xml="N" xmlname="rlt" parent="maint" datatype="HIDDEN"><tr class="ctable"></tr><tr><td><label class="clabel" for="maint_S">S</label></td><td><input type="text" class="ctext" name="maint_S" xmlname="S" nameid="maint" id="maint_S" mndf="N" desc="N" datatype="NUMBER" xml="N" parent="name" value="" label="S" onchange="javascript:onChange(this);" onkeydown="javascript:onKeyDown(this);" onkeypress="javascript:onKeyPress(this);" onkeyup="javascript:onKeyUp(this);"></td></tr><tr class="ctable"></tr><tr><td><label class="clabel" for="maint_R1">R1</label></td><td><input type="text" class="ctext" name="maint_R1" xmlname="R1" nameid="maint" id="maint_R1" mndf="N" desc="N" datatype="NUMBER" xml="N" parent="name" value="" label="R1" onchange="javascript:onChange(this);" onkeydown="javascript:onKeyDown(this);" onkeypress="javascript:onKeyPress(this);" onkeyup="javascript:onKeyUp(this);"></td><td><label class="clabel" for="maint_R2">R2</label></td><td><input type="text" class="ctext" name="maint_R2" xmlname="R2" nameid="maint" id="maint_R2" mndf="N" desc="N" datatype="NUMBER" xml="N" parent="name" value="" label="R2" onchange="javascript:onChange(this);" onkeydown="javascript:onKeyDown(this);" onkeypress="javascript:onKeyPress(this);" onkeyup="javascript:onKeyUp(this);"></td><td><label class="clabel" for="maint_R3">R3</label></td><td><input type="text" class="ctext" name="maint_R3" xmlname="R3" nameid="maint" id="maint_R3" mndf="N" desc="N" datatype="NUMBER" xml="N" parent="name" value="" label="R3" onchange="javascript:onChange(this);" onkeydown="javascript:onKeyDown(this);" onkeypress="javascript:onKeyPress(this);" onkeyup="javascript:onKeyUp(this);"></td></tr><tr class="ctable"></tr><tr><td><label class="clabel" for="maint_G1">G1</label></td><td><input type="text" class="ctext" name="maint_G1" xmlname="G1" nameid="maint" id="maint_G1" mndf="N" desc="N" datatype="NUMBER" xml="N" parent="name" value="" label="G1" onchange="javascript:onChange(this);" onkeydown="javascript:onKeyDown(this);" onkeypress="javascript:onKeyPress(this);" onkeyup="javascript:onKeyUp(this);"></td><td><label class="clabel" for="maint_G2">G2</label></td><td><input type="text" class="ctext" name="maint_G2" xmlname="G2" nameid="maint" id="maint_G2" mndf="N" desc="N" datatype="NUMBER" xml="N" parent="name" value="" label="G2" onchange="javascript:onChange(this);" onkeydown="javascript:onKeyDown(this);" onkeypress="javascript:onKeyPress(this);" onkeyup="javascript:onKeyUp(this);"></td><td><label class="clabel" for="maint_G3">G3</label></td><td><input type="text" class="ctext" name="maint_G3" xmlname="G3" nameid="maint" id="maint_G3" mndf="N" desc="N" datatype="NUMBER" xml="N" parent="name" value="" label="G3" onchange="javascript:onChange(this);" onkeydown="javascript:onKeyDown(this);" onkeypress="javascript:onKeyPress(this);" onkeyup="javascript:onKeyUp(this);"></td></tr><tr class="ctable"></tr><tr><td><label class="clabel" for="maint_M1">M1</label></td><td><input type="text" class="ctext" name="maint_M1" xmlname="M1" nameid="maint" id="maint_M1" mndf="N" desc="N" datatype="NUMBER" xml="N" parent="name" value="" label="M1" onchange="javascript:onChange(this);" onkeydown="javascript:onKeyDown(this);" onkeypress="javascript:onKeyPress(this);" onkeyup="javascript:onKeyUp(this);"></td><td><label class="clabel" for="maint_M2">M2</label></td><td><input type="text" class="ctext" name="maint_M2" xmlname="M2" nameid="maint" id="maint_M2" mndf="N" desc="N" datatype="NUMBER" xml="N" parent="name" value="" label="M2" onchange="javascript:onChange(this);" onkeydown="javascript:onKeyDown(this);" onkeypress="javascript:onKeyPress(this);" onkeyup="javascript:onKeyUp(this);"></td></tr><tr class="ctable"></tr><tr><td><label class="clabel" for="maint_P">P</label></td><td><input type="text" class="ctext" name="maint_P" xmlname="P" nameid="maint" id="maint_P" mndf="N" desc="N" datatype="NUMBER" xml="N" parent="name" value="" label="P" onchange="javascript:onChange(this);" onkeydown="javascript:onKeyDown(this);" onkeypress="javascript:onKeyPress(this);" onkeyup="javascript:onKeyUp(this);"></td></tr><tr class="ctable"></tr><tr><td><label class="clabel" for="maint_D1">D1</label></td><td><input type="text" class="ctext" name="maint_D1" xmlname="D1" nameid="maint" id="maint_D1" mndf="N" desc="N" datatype="NUMBER" xml="N" parent="name" value="" label="D1" onchange="javascript:onChange(this);" onkeydown="javascript:onKeyDown(this);" onkeypress="javascript:onKeyPress(this);" onkeyup="javascript:onKeyUp(this);"></td><td><label class="clabel" for="maint_D2">D2</label></td><td><input type="text" class="ctext" name="maint_D2" xmlname="D2" nameid="maint" id="maint_D2" mndf="N" desc="N" datatype="NUMBER" xml="N" parent="name" value="" label="D2" onchange="javascript:onChange(this);" onkeydown="javascript:onKeyDown(this);" onkeypress="javascript:onKeyPress(this);" onkeyup="javascript:onKeyUp(this);"></td><td><label class="clabel" for="maint_D3">D3</label></td><td><input type="text" class="ctext" name="maint_D3" xmlname="D3" nameid="maint" id="maint_D3" mndf="N" desc="N" datatype="NUMBER" xml="N" parent="name" value="" label="D3" onchange="javascript:onChange(this);" onkeydown="javascript:onKeyDown(this);" onkeypress="javascript:onKeyPress(this);" onkeyup="javascript:onKeyUp(this);"></td></tr><tr class="ctable"></tr><tr><td><label class="clabel" for="maint_N1">N1</label></td><td><input type="text" class="ctext" name="maint_N1" xmlname="N1" nameid="maint" id="maint_N1" mndf="N" desc="N" datatype="NUMBER" xml="N" parent="name" value="" label="N1" onchange="javascript:onChange(this);" onkeydown="javascript:onKeyDown(this);" onkeypress="javascript:onKeyPress(this);" onkeyup="javascript:onKeyUp(this);"></td><td><label class="clabel" for="maint_N2">N2</label></td><td><input type="text" class="ctext" name="maint_N2" xmlname="N2" nameid="maint" id="maint_N2" mndf="N" desc="N" datatype="NUMBER" xml="N" parent="name" value="" label="N2" onchange="javascript:onChange(this);" onkeydown="javascript:onKeyDown(this);" onkeypress="javascript:onKeyPress(this);" onkeyup="javascript:onKeyUp(this);"></td><td><label class="clabel" for="maint_N3">N3</label></td><td><input type="text" class="ctext" name="maint_N3" xmlname="N3" nameid="maint" id="maint_N3" mndf="N" desc="N" datatype="NUMBER" xml="N" parent="name" value="" label="N3" onchange="javascript:onChange(this);" onkeydown="javascript:onKeyDown(this);" onkeypress="javascript:onKeyPress(this);" onkeyup="javascript:onKeyUp(this);"></td></tr><tr class="ctable"></tr><tr><td class="ccaption" colspan="10">Melakartha </td></tr><tr class="ctable"></tr><tr><td><label class="clabel" for="maint_AroRagaClass">Aro Raga Class</label></td><td><select datatype="LIST" nameid="maint" name="maint_AroRagaClass" xmlname="AroRagaClass" id="maint_AroRagaClass" xml="N" parent="name" class="ctext" value="" mndf="N" label=" Aro Raga Class " onchange="javascript:onChange(this);" onkeydown="javascript:onKeyDown(this);" onkeypress="javascript:onKeyPress(this);" onkeyup="javascript:onKeyUp(this);"><option selected="" value=""> </option><option value="1"> 1-Sampurana</option><option value="2"> 2-Sadava</option><option value="3"> 3-Ovdava</option></select></td><td><label class="clabel" for="maint_AvroRagaClass">Avro Raga Class<span class="mandatory">*</span></label></td><td><select datatype="LIST" nameid="maint" name="maint_AvroRagaClass" xmlname="AvroRagaClass" id="maint_AvroRagaClass" xml="N" parent="name" class="ctext" value="" mndf="Y" label=" Avro Raga Class " onchange="javascript:onChange(this);" onkeydown="javascript:onKeyDown(this);" onkeypress="javascript:onKeyPress(this);" onkeyup="javascript:onKeyUp(this);"><option selected="" value=""> </option><option value="1"> 1-Sampurana</option><option value="2"> 2-Sadava</option><option value="3"> 3-Ovdava</option></select></td></tr><tr class="ctable"></tr><tr><td> <div id="maint_SwaraAroLDiv"> LAbel</div> </td> <td> <div name="maint_SwaraAroDiv" nameid="maint" id="maint_SwaraAroDiv" xml="N" xmlname="SwaraAro" parent="name" datatype="DIVROW"> <img src="./Heaerie-Carnatic_files/loading.gif"></div></td><td> <div id="maint_SwaraAvroLDiv"> LAbel</div> </td> <td> <div name="maint_SwaraAvroDiv" nameid="maint" id="maint_SwaraAvroDiv" xml="N" xmlname="SwaraAvro" parent="name" datatype="DIVROW"> <img src="./Heaerie-Carnatic_files/loading.gif"></div></td></tr><tr class="ctable"></tr><tr><td> <div id="maint_SwaraAroCombLDiv"> LAbel</div> </td> <td> <div name="maint_SwaraAroCombDiv" nameid="maint" id="maint_SwaraAroCombDiv" xml="N" xmlname="SwaraAroComb" parent="name" datatype="DIVROW"> <img src="./Heaerie-Carnatic_files/loading.gif"></div></td><td> <div id="maint_SwaraAvroCombLDiv"> LAbel</div> </td> <td> <div name="maint_SwaraAvroCombDiv" nameid="maint" id="maint_SwaraAvroCombDiv" xml="N" xmlname="SwaraAvroComb" parent="name" datatype="DIVROW"> <img src="./Heaerie-Carnatic_files/loading.gif"></div></td>
+
+
+</tr>
+</tbody></table>
+
+
+	<table>
+		<tbody><tr>
+			<td>	
+				<center>
+				<input type="button" class="button" parent="maint" task="BACK" value="BACK" onclick="javascript:onClick(this)">
+				<input type="button" class="button" parent="maint" task="VALIDATE" value="validate" onclick="javascript:onClick(this)">
+				<input type="button" class="button" parent="maint" task="SUBMIT" value="submit" onclick="javascript:onClick(this)">
+				</center>
+			</td>
+		</tr>
+	</tbody></table>
+
+</form>
+
+
+
+  
+
+
+<div id="bmchmextverifyinstall" title="1.0" style="display:none;height:0;width:0;"></div></body></html>

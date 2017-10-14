@@ -1,0 +1,31 @@
+	N1Obj.val(1); 
+			    	N2Obj.val(2); 
+					N3Obj.val(3); 
+
+					D1Obj.val(0);
+					D2Obj.val(parseInt(N2Obj.val())); //4
+					D3Obj.val(parseInt(N2Obj.val())+1);    //N2+N3+1-N3 =    6
+
+
+					
+					G1Obj.val(0);
+					G2Obj.val(parseInt( D3Obj.val() )  + parseInt( N3Obj.val() )) ; // D3+N3+1-N1 =3+3+1-1
+					G3Obj.val( parseInt( G2Obj.val() )+ parseInt( D3Obj.val() )  + parseInt( N3Obj.val() ) ) ; // D3+N3+1-N1 =3+3+1-1
+
+					R1Obj.val(0);
+					R2Obj.val( parseInt( G3Obj.val() )+ parseInt( D3Obj.val() )  + parseInt( N3Obj.val() )  -  parseInt( G2Obj.val() ) ) ;
+ 								//G3+D3+N3-G2
+
+					R3Obj.val( parseInt( R2Obj.val()  +  parseInt( D3Obj.val() ) + parseInt( N3Obj.val() )  )  ;   //R2+G3+D3+N3-G3
+
+
+
+					PObj.val(0);
+					M1Obj.val(0);
+					R1Obj.val(0);
+				
+
+
+					M2Obj.val(comb/2);
+
+
